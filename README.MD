@@ -58,6 +58,10 @@ Here is the final result, after a few small manual tweaks to the color definitio
 
 ## Installing
 
+Arch Linux users can install the [groffhl-git](https://aur.archlinux.org/packages/groffhl-git/) package from the AUR.
+
+---
+
 Clone the repo and run the following (if necessary, as root):
 
     make install
