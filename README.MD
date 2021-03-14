@@ -67,3 +67,9 @@ Clone the repo and run the following (if necessary, as root):
     make install
 
 The executable will be installed to `/usr/local/bin/groffhl`.
+
+## TODO
+
+- [ ] Support for bold/italic sequences (`\033[1;38;2;r;g;bm`, `\033[3;38;2;r;g;bm`)
+- [ ] Ignoring unsupported sequences (see full list [here](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters))
+- [ ] -h/--help flag, manpage with more examples
