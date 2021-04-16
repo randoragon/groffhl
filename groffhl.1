@@ -1,0 +1,56 @@
+.TH GROFFHL 1 2021-04-16 "groffhl-VERSION"
+.SH NAME
+groffhl - convert truecolor escape sequences into native groff format
+.SH SYNOPSIS
+.B groffhl
+.I FILE
+.SH DESCRIPTION
+.P
+.B groffhl
+is a small program for converting Linux "truecolor" escape
+sequences into native groff format. You can then take the output and
+paste it into another groff document.
+.P
+.B groffhl
+does not perform syntax highlighting, this job is left to some
+external tool, like
+.UR "http://www.andre-simon.de/doku/highlight/en/highlight.php"
+.B highlight
+.UE
+\&.
+.SH EXAMPLE
+.TP
+Short answer:
+.EX
+$ highlight -O truecolor your_code.txt >highlighted.txt
+$ groffhl highlighted.txt >highlighted.groff
+.EE
+.P
+A more verbose example is written out in the
+.I README.MD
+file.
+.br
+You can also view it
+.UR "https://github.com/Randoragon/groffhl/blob/master/README.MD"
+.I here
+.UE
+.SH BUGS
+.P
+Bold/italic sequences, among many other variants, are not supported.
+This may change in the future, depending on the author's demand for
+more advanced features.
+.P
+You can report any bugs directly to the author, or by opening an issue
+on GitHub. Contact info below.
+.SH AUTHORS
+.P
+.B groffhl
+was written by
+.MT "randoragongamedev@gmail.com"
+Randoragon
+.ME
+.br
+Browse the source code at
+.UR "https://github.com/randoragon/groffhl"
+GitHub
+.UE
